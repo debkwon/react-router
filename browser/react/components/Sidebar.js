@@ -12,7 +12,7 @@ export default ({ go, location }) => (
     </section>
     <section>
       <h4 className={location.match('artist') ? 'menu-item active' : 'menu-item'}>
-        <a href="#" onClick={() => go('artists')}>ARTISTS</a>
+        <div><Link to="/artists">ARTISTS</Link></div>
       </h4>
     </section>
   </sidebar>

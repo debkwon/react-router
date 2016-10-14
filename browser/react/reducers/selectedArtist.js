@@ -6,8 +6,10 @@ import { convertArtist } from '../converters';
 const initialArtist = {};
 
 export default function artist (state = initialArtist, action) {
+  console.log("Action.Artist: ", action.artist)
   switch (action.type) {
     case RECEIVE_ARTIST: return convertArtist(action);
     default: return state;
   }
 }
+

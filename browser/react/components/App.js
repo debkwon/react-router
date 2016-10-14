@@ -9,24 +9,6 @@ import ArtistsContainer from '../containers/ArtistsContainer';
 import ArtistContainer from '../containers/ArtistContainer';
 import PlayerContainer from '../containers/PlayerContainer';
 
-/*
-      <div className="col-xs-2">
-          <SidebarContainer />
-        </div>
-        <div className="col-xs-10">
-          {
-            (() => {
-              switch (location) {
-                case 'albums': return <AlbumsContainer />
-                case 'artists': return <ArtistsContainer />
-                case 'album': return <AlbumContainer />
-                case 'artist': return <ArtistContainer /> 
-              }
-            })()
-          }
-        </div>
-        <PlayerContainer />
-*/
 
 export default class App extends Component {
 
@@ -46,7 +28,7 @@ export default class App extends Component {
   }
 
   render () {
-    const { location } = this.props;
+    const { location, children } = this.props;
 
     return (
       <div id="main" className="container-fluid">

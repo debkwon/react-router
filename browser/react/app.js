@@ -8,6 +8,7 @@ import AppContainer from './containers/AppContainer';
 import AlbumsContainer from './containers/AlbumsContainer';
 import AlbumContainer from './containers/AlbumContainer';
 import ArtistsContainer from './containers/ArtistsContainer';
+import ArtistContainer from './containers/ArtistContainer';
 import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path='/albums' component={AlbumsContainer} />
         <Route path='/artists' component={ArtistsContainer} />
         <Route path='/albums/:albumId' component={AlbumContainer} />
+        <Route path='/artists/:artistId' component={ArtistContainer} />
       </Route>
     </Router>
   </Provider>,
